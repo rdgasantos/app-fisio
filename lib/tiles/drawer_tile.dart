@@ -1,3 +1,4 @@
+import 'package:fisio_app/screens/result_screen.dart';
 import 'package:flutter/material.dart';
 
 class DrawerTile extends StatelessWidget {
@@ -13,6 +14,9 @@ class DrawerTile extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: () {
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context)=>ResultScreen.vazio())
+          );
 
         },
         child: Container(
@@ -22,7 +26,7 @@ class DrawerTile extends StatelessWidget {
               Icon(
                 icon,
                 size: 32.0,
-                color: Color.fromARGB(255, 78, 210, 142),
+                color: Color.fromARGB(255, 189, 236, 182),
               ),
               Text(
                 text,

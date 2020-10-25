@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         title: 'Teste Hammersmith',
         theme: ThemeData(
           primarySwatch: Colors.green,
-          primaryColor: Color.fromARGB(255, 78, 210, 142),
+          primaryColor: Color.fromARGB(255, 189, 236, 182),
         ),
         debugShowMaterialGrid: false,
         debugShowCheckedModeBanner: false,

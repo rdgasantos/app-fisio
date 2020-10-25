@@ -1,6 +1,8 @@
 import 'package:fisio_app/data/result_data.dart';
 import 'package:fisio_app/models/result_model.dart';
 import 'package:fisio_app/screens/result_screen.dart';
+import 'package:fisio_app/screens/session_postura.dart';
+import 'package:fisio_app/tabs/test_tab.dart';
 import 'package:flutter/material.dart';
 class PosturaScreen extends StatefulWidget {
 
@@ -23,7 +25,7 @@ class _PosturaScreenState extends State<PosturaScreen> {
   final String alarm;
   final String info;
   final int value;
-  String additional = "Direita";
+  String additional = "";
 
   _PosturaScreenState(this.sourceImage, this.descriptionText, this.alarm, this.info, this.value);
 
@@ -80,7 +82,6 @@ class _PosturaScreenState extends State<PosturaScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Postura"),
         centerTitle: true,
       ),
       body: ListView(
@@ -121,23 +122,23 @@ class _PosturaScreenState extends State<PosturaScreen> {
 
                       ResultModel.of(context).addTestItem(result);
 
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context)=>ResultScreen(value))
+                      Navigator.of(context).pop(
+                          MaterialPageRoute(builder: (context)=>TestTab())
                       );
                     },
                     child: Text("Selecionar",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
+                      style: TextStyle(fontSize: 25.0, color: Colors.white),
                     ),
-                    color: Color.fromARGB(255, 78, 210, 142),
+                    color: Color.fromARGB(255, 189, 236, 182),
                   ),
                 ),
-                SizedBox(height: 16.00,),
+                SizedBox(height: 32.00,),
                 Text(
                   alarm,
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 15.0,
                       fontWeight: FontWeight.w500,
-                      color: Colors.red
+                      color: Colors.red,
                   ),
                 ),
               ],

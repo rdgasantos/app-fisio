@@ -5,22 +5,11 @@ class SessionPostura extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 1,
       child: Scaffold(
         appBar: AppBar(
           title: Text("Postura"),
           centerTitle: true,
-          bottom: TabBar(
-            indicatorColor: Colors.white,
-            tabs: <Widget>[
-              Tab(
-                icon: Icon(Icons.grid_on),
-              ),
-              Tab(
-                icon: Icon(Icons.list),
-              )
-            ],
-          ),
         ),
         body: TabBarView(
           physics: NeverScrollableScrollPhysics(),
@@ -161,7 +150,7 @@ class SessionPostura extends StatelessWidget {
                 ),
               ],
             ),
-            ListView(
+            /*ListView(
               padding: EdgeInsets.all(4.0),
               children: <Widget>[
                 InkWell(
@@ -234,7 +223,7 @@ class SessionPostura extends StatelessWidget {
                 ),
               ],
 
-            ),
+            ),*/
           ],
         ),
       ),

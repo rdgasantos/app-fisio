@@ -6,7 +6,9 @@ import 'package:scoped_model/scoped_model.dart';
 
 class ResultScreen extends StatelessWidget {
 
-  final int value;
+  int value;
+
+  ResultScreen.vazio();
 
   ResultScreen(this.value);
 

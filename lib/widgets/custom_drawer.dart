@@ -15,10 +15,10 @@ class CustomDrawer extends StatelessWidget {
         children: const <Widget>[
           DrawerHeader(
             decoration: BoxDecoration(
-              color:  Color.fromARGB(255, 78, 210, 142),
+              color:  Color.fromARGB(255, 189, 236, 182),
             ),
             child: Text(
-              'Avaliação\nNeurológica\nNeonatal\nde Hammersmith',
+              'Avaliação\nNeurológica\nde Hammersmith',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,

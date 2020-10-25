@@ -6,7 +6,7 @@ class SessionRt extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Controle de cabeça 2 (Tônus flexor"),
+        title: Text("Resposta a tração"),
         centerTitle: true,
       ),
       body:GridView(

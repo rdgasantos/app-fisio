@@ -11,7 +11,7 @@ class HomeTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 78, 210, 142),
+        backgroundColor: Color.fromARGB(255, 189, 236, 182),
         centerTitle: true,
       ),
       backgroundColor: Colors.white,
@@ -19,13 +19,14 @@ class HomeTab extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top: 60.0, bottom: 20.0),
-            child: Text("Avaliação Neurológica Neonatal\nde\nHammersmith",
+            padding: EdgeInsets.only(top: 40.0, bottom: 20.00, left: 20.00, right: 20.00),
+            child: Text("Avaliação neurológica de Hammersmith resumida para"
+                " recém-nascidos a termo e prematuros com idade equivalente a termo",
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.black, fontSize: 40.00)),
+                style: TextStyle(color: Colors.black, fontWeight: FontWeight.w400, fontSize: 20.00)),
           ),
           Container(
-            padding: EdgeInsets.only(top: 80.0),
+            padding: EdgeInsets.only(top: 10.0, bottom: 10.00),
             child: Container(
               height: 50.0,
               child: RaisedButton(
@@ -35,10 +36,40 @@ class HomeTab extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => TestTab()));
                 },
                 child: Text(
-                  "Novo Teste",
-                  style: TextStyle(color: Colors.white, fontSize: 25.00),
+                  "Avaliação para triagem",
+                  style: TextStyle(color: Colors.white, fontSize: 20.00),
                 ),
-                color: Color.fromARGB(255, 78, 210, 142),
+                color: Color.fromARGB(255, 189, 236, 182),
+              ),
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+            child: Container(
+              height: 50.0,
+              child: RaisedButton(
+                elevation: 10.0,
+                onPressed: () {},
+                child: Text(
+                  "HNNE",
+                  style: TextStyle(color: Colors.white, fontSize: 20.00),
+                ),
+                color: Color.fromARGB(255, 189, 236, 182),
+              ),
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.only(top: 10.0),
+            child: Container(
+              height: 50.0,
+              child: RaisedButton(
+                elevation: 10.0,
+                onPressed: () {},
+                child: Text(
+                  "HINE",
+                  style: TextStyle(color: Colors.white, fontSize: 20.00),
+                ),
+                color: Color.fromARGB(255, 189, 236, 182),
               ),
             ),
           )

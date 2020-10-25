@@ -1,6 +1,9 @@
 import 'package:fisio_app/data/result_data.dart';
 import 'package:fisio_app/models/result_model.dart';
+import 'package:fisio_app/screens/home_screen.dart';
 import 'package:fisio_app/screens/result_screen.dart';
+import 'package:fisio_app/screens/session_tb.dart';
+import 'package:fisio_app/tabs/test_tab.dart';
 import 'package:flutter/material.dart';
 
 class TbScreen extends StatefulWidget {
@@ -90,7 +93,7 @@ class _TbScreenState extends State<TbScreen> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(4.0)),
                               border: Border.all(
-                                  color: right == size ? Color.fromARGB(255, 78, 210, 142): Colors.grey[500],
+                                  color: right == size ? Color.fromARGB(255, 189, 236, 182): Colors.grey[500],
                                   width: 1.5),),
                               width: 50.0,
                           alignment: Alignment.center,
@@ -108,7 +111,7 @@ class _TbScreenState extends State<TbScreen> {
                               borderRadius:
                               BorderRadius.all(Radius.circular(4.0)),
                               border: Border.all(
-                                  color: lefth == size ? Color.fromARGB(255, 78, 210, 142): Colors.grey[500],
+                                  color: lefth == size ? Color.fromARGB(255, 189, 236, 182): Colors.grey[500],
                                   width: 1.5)),
                           width: 50.0,
                           alignment: Alignment.center,
@@ -129,16 +132,16 @@ class _TbScreenState extends State<TbScreen> {
                       ResultModel.of(context).addTestItem(result);
 
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => ResultScreen(value)));
+                          builder: (context) => TestTab()));
                     }: null,
                     child: Text(
                       "Selecionar",
                       style: TextStyle(
-                          fontSize: 18.0,
+                          fontSize: 25.0,
                           color: Colors.white,
                       ),
                     ),
-                    color: Color.fromARGB(255, 78, 210, 142),
+                    color: Color.fromARGB(255, 189, 236, 182),
                   ),
                 ),
                 SizedBox(
@@ -147,9 +150,10 @@ class _TbScreenState extends State<TbScreen> {
                 Text(
                   alarm,
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 15.0,
                       fontWeight: FontWeight.w500,
-                      color: Colors.red),
+                      color: Colors.red,
+                  ),
                 ),
               ],
             ),

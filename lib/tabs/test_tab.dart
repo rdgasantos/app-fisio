@@ -5,6 +5,7 @@ import 'package:fisio_app/screens/session_ov.dart';
 import 'package:fisio_app/screens/session_postura.dart';
 import 'package:fisio_app/screens/session_rm.dart';
 import 'package:fisio_app/screens/session_rt.dart';
+import 'package:fisio_app/screens/session_sa.dart';
 import 'package:fisio_app/screens/session_sv.dart';
 import 'package:fisio_app/screens/session_tb.dart';
 import 'package:fisio_app/screens/session_tp.dart';
@@ -16,14 +17,14 @@ class TestTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 78, 210, 142),
+        backgroundColor: Color.fromARGB(255, 189, 236, 182),
         centerTitle: true,
       ),
       body: ListView(
         children: <Widget>[
           ListTile(
             title: Text("Postura"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182),),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => SessionPostura())
@@ -33,7 +34,7 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Tração de braço"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SessionTb())
@@ -43,7 +44,7 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Tração de perna"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SessionTp())
@@ -53,7 +54,7 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Controle de cabeça 1"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SessionCc1())
@@ -63,7 +64,7 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Controle de cabeça 2"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SessionCc2())
@@ -73,7 +74,7 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Resposta a tração"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SessionRt())
@@ -83,7 +84,7 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Suspensão ventral"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SessionSv())
@@ -94,7 +95,7 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Movimentos espontâneos"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SessionMe())
@@ -104,7 +105,7 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Tremor"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SessionTr())
@@ -114,7 +115,7 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Reflexo de Moro"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SessionRm())
@@ -124,7 +125,7 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Orientação visual"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SessionOv())
@@ -134,9 +135,11 @@ class TestTab extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text("Sinais anormais"),
-            trailing: Icon(Icons.keyboard_arrow_right),
+            trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 189, 236, 182)),
             onTap: () {
-
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => SessionSa())
+              );
             },
           ),
         ],

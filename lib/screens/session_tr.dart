@@ -1,6 +1,7 @@
 import 'package:fisio_app/data/result_data.dart';
 import 'package:fisio_app/models/result_model.dart';
 import 'package:fisio_app/screens/result_screen.dart';
+import 'package:fisio_app/tabs/test_tab.dart';
 import 'package:flutter/material.dart';
 
 class SessionTr extends StatelessWidget {
@@ -30,14 +31,14 @@ class SessionTr extends StatelessWidget {
 
                   ResultModel.of(context).addTestItem(result);
 
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context)=>ResultScreen(0))
+                  Navigator.of(context).pop(
+                      MaterialPageRoute(builder: (context)=>TestTab())
                   );
                 },
                 child: Text("Selecionar",  style: TextStyle(
                     fontSize: 15.0, color: Colors.white),
                 ),
-                color: Color.fromARGB(255, 78, 210, 142),
+                color: Color.fromARGB(255, 189, 236, 182),
               ),
             ],
           ),
@@ -58,14 +59,14 @@ class SessionTr extends StatelessWidget {
 
                   ResultModel.of(context).addTestItem(result);
 
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context)=>ResultScreen(0))
+                  Navigator.of(context).pop(
+                      MaterialPageRoute(builder: (context)=>TestTab())
                   );
                 },
                 child: Text("Selecionar",  style: TextStyle(
                     fontSize: 15.0, color: Colors.white),
                 ),
-                color: Color.fromARGB(255, 78, 210, 142),
+                color: Color.fromARGB(255, 189, 236, 182),
               ),
             ],
           ),
@@ -86,14 +87,14 @@ class SessionTr extends StatelessWidget {
 
                   ResultModel.of(context).addTestItem(result);
 
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context)=>ResultScreen(0))
+                  Navigator.of(context).pop(
+                      MaterialPageRoute(builder: (context)=>TestTab())
                   );
                 },
                 child: Text("Selecionar",  style: TextStyle(
                     fontSize: 15.0, color: Colors.white),
                 ),
-                color: Color.fromARGB(255, 78, 210, 142),
+                color: Color.fromARGB(255, 189, 236, 182),
               ),
             ],
           ),
@@ -114,14 +115,14 @@ class SessionTr extends StatelessWidget {
 
                   ResultModel.of(context).addTestItem(result);
 
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context)=>ResultScreen(1))
+                  Navigator.of(context).pop(
+                      MaterialPageRoute(builder: (context)=>TestTab())
                   );
                 },
                 child: Text("Selecionar",  style: TextStyle(
                     fontSize: 15.0, color: Colors.white),
                 ),
-                color: Color.fromARGB(255, 78, 210, 142),
+                color: Color.fromARGB(255, 189, 236, 182),
               ),
             ],
           ),
