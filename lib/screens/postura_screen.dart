@@ -137,9 +137,10 @@ class _PosturaScreenState extends State<PosturaScreen> {
                   alarm,
                   style: TextStyle(
                       fontSize: 15.0,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w800,
                       color: Colors.red,
                   ),
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),

@@ -15,11 +15,15 @@ class SessionMe extends StatelessWidget {
       body: ListView(
         padding: EdgeInsets.all(4.0),
         children: <Widget>[
+          SizedBox(height: 16.0,),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Text(
+              Container(
+                padding: EdgeInsets.only(left: 10.0),
+                child: Text(
                   "Apenas extensão", style: TextStyle(fontSize: 18),
+                ),
               ),
               RaisedButton(
                 onPressed: (){
@@ -27,12 +31,12 @@ class SessionMe extends StatelessWidget {
 
                   ResultModel.of(context).addTestItem(result);
 
-                  Navigator.of(context).pop(
+                  /*Navigator.of(context).pop(
                       MaterialPageRoute(builder: (context)=>TestTab())
-                  );
+                  );*/
                 },
                 child: Text("Selecionar",  style: TextStyle(
-                    fontSize: 15.0, color: Colors.white),
+                    fontSize: 17.0, color: Colors.white),
                 ),
                 color: Color.fromARGB(255, 189, 236, 182),
               ),
@@ -44,9 +48,12 @@ class SessionMe extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Expanded(
-                child: Text(
-                  "Extensões e movimentos abruptos ao acaso; alguns movimentos lisos.",
-                  style: TextStyle(fontSize: 18),
+                child: Container(
+                  padding: EdgeInsets.only(left: 10.0),
+                  child: Text(
+                    "Extensões e movimentos abruptos ao acaso; alguns movimentos lisos.",
+                    style: TextStyle(fontSize: 18),
+                  ),
                 ),
               ),
               RaisedButton(
@@ -55,12 +62,12 @@ class SessionMe extends StatelessWidget {
 
                   ResultModel.of(context).addTestItem(result);
 
-                  Navigator.of(context).pop(
+                  /*Navigator.of(context).pop(
                       MaterialPageRoute(builder: (context)=>TestTab())
-                  );
+                  );*/
                 },
                 child: Text("Selecionar",  style: TextStyle(
-                    fontSize: 15.0, color: Colors.white),
+                    fontSize: 17.0, color: Colors.white),
                 ),
                 color: Color.fromARGB(255, 189, 236, 182),
               ),
@@ -72,9 +79,12 @@ class SessionMe extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Expanded(
-                child: Text(
-                  "Movimentos fluente, mas monótonos.",
-                  style: TextStyle(fontSize: 18),
+                child: Container(
+                  padding: EdgeInsets.only(left: 10.0),
+                  child: Text(
+                    "Movimentos fluente, mas monótonos.",
+                    style: TextStyle(fontSize: 18),
+                  ),
                 ),
               ),
               RaisedButton(
@@ -83,12 +93,12 @@ class SessionMe extends StatelessWidget {
 
                   ResultModel.of(context).addTestItem(result);
 
-                  Navigator.of(context).pop(
+                  /*Navigator.of(context).pop(
                       MaterialPageRoute(builder: (context)=>TestTab())
-                  );
+                  );*/
                 },
                 child: Text("Selecionar",  style: TextStyle(
-                    fontSize: 15.0, color: Colors.white),
+                    fontSize: 17.0, color: Colors.white),
                 ),
                 color: Color.fromARGB(255, 189, 236, 182),
               ),
@@ -100,9 +110,12 @@ class SessionMe extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Expanded(
-                child: Text(
-                  "Movimentos fluentes alternados em braços e pernas; boa variabilidade.",
-                  style: TextStyle(fontSize: 18),
+                child: Container(
+                  padding: EdgeInsets.only(left: 10.0),
+                  child: Text(
+                    "Movimentos fluentes alternados em braços e pernas; boa variabilidade.",
+                    style: TextStyle(fontSize: 18),
+                  ),
                 ),
               ),
               RaisedButton(
@@ -111,12 +124,12 @@ class SessionMe extends StatelessWidget {
 
                   ResultModel.of(context).addTestItem(result);
 
-                  Navigator.of(context).pop(
+                  /*Navigator.of(context).pop(
                       MaterialPageRoute(builder: (context)=>TestTab())
-                  );
+                  );*/
                 },
                 child: Text("Selecionar",  style: TextStyle(
-                    fontSize: 15.0, color: Colors.white),
+                    fontSize: 17.0, color: Colors.white),
                 ),
                 color: Color.fromARGB(255, 189, 236, 182),
               ),
@@ -128,9 +141,12 @@ class SessionMe extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Expanded(
-                child: Text(
-                  "- Restrito, sincronizado\n- Boca\n- Trancos ou outro movimento anormal.",
-                  style: TextStyle(fontSize: 18),
+                child: Container(
+                  padding: EdgeInsets.only(left: 10.0),
+                  child: Text(
+                    "- Restrito, sincronizado\n- Boca\n- Trancos ou outro movimento anormal.",
+                    style: TextStyle(fontSize: 18),
+                  ),
                 ),
               ),
               RaisedButton(
@@ -139,12 +155,12 @@ class SessionMe extends StatelessWidget {
 
                   ResultModel.of(context).addTestItem(result);
 
-                  Navigator.of(context).pop(
+                  /*Navigator.of(context).pop(
                       MaterialPageRoute(builder: (context)=>TestTab())
-                      );
+                      );*/
                 },
                 child: Text("Selecionar",  style: TextStyle(
-                    fontSize: 15.0, color: Colors.white),
+                    fontSize: 17.0, color: Colors.white),
                 ),
                 color: Color.fromARGB(255, 189, 236, 182),
               ),

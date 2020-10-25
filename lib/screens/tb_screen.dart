@@ -35,7 +35,7 @@ class _TbScreenState extends State<TbScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tração de Braço"),
+        title: Text(""),
         centerTitle: true,
       ),
       body: ListView(
@@ -151,9 +151,10 @@ class _TbScreenState extends State<TbScreen> {
                   alarm,
                   style: TextStyle(
                       fontSize: 15.0,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w800,
                       color: Colors.red,
                   ),
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),

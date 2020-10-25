@@ -53,8 +53,8 @@ class _SessionOvState extends State<SessionOv> {
                               option);
                           ResultModel.of(context).addTestItem(result);
 
-                          Navigator.of(context).pop(MaterialPageRoute(
-                              builder: (context) => TestTab()));
+                          /*Navigator.of(context).pop(MaterialPageRoute(
+                              builder: (context) => TestTab()));*/
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -84,8 +84,8 @@ class _SessionOvState extends State<SessionOv> {
                               option);
                           ResultModel.of(context).addTestItem(result);
 
-                          Navigator.of(context).pop(MaterialPageRoute(
-                              builder: (context) => TestTab()));
+                          /*Navigator.of(context).pop(MaterialPageRoute(
+                              builder: (context) => TestTab()));*/
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -144,8 +144,8 @@ class _SessionOvState extends State<SessionOv> {
                               option2);
                           ResultModel.of(context).addTestItem(result);
 
-                          Navigator.of(context).pop(MaterialPageRoute(
-                              builder: (context) => TestTab()));
+                          /*Navigator.of(context).pop(MaterialPageRoute(
+                              builder: (context) => TestTab()));*/
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -175,8 +175,8 @@ class _SessionOvState extends State<SessionOv> {
                               option2);
                           ResultModel.of(context).addTestItem(result);
 
-                          Navigator.of(context).pop(MaterialPageRoute(
-                              builder: (context) => TestTab()));
+                          /*Navigator.of(context).pop(MaterialPageRoute(
+                              builder: (context) => TestTab()));*/
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -235,8 +235,8 @@ class _SessionOvState extends State<SessionOv> {
                               option3);
                           ResultModel.of(context).addTestItem(result);
 
-                          Navigator.of(context).pop(MaterialPageRoute(
-                              builder: (context) => TestTab()));
+                          /*Navigator.of(context).pop(MaterialPageRoute(
+                              builder: (context) => TestTab()));*/
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -266,8 +266,8 @@ class _SessionOvState extends State<SessionOv> {
                               option3);
                           ResultModel.of(context).addTestItem(result);
 
-                          Navigator.of(context).pop(MaterialPageRoute(
-                              builder: (context) => TestTab()));
+                          /*Navigator.of(context).pop(MaterialPageRoute(
+                              builder: (context) => TestTab()));*/
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -326,8 +326,8 @@ class _SessionOvState extends State<SessionOv> {
                               option4);
                           ResultModel.of(context).addTestItem(result);
 
-                          Navigator.of(context).pop(MaterialPageRoute(
-                              builder: (context) => TestTab()));
+                          /*Navigator.of(context).pop(MaterialPageRoute(
+                              builder: (context) => TestTab()));*/
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -357,8 +357,8 @@ class _SessionOvState extends State<SessionOv> {
                               option4);
                           ResultModel.of(context).addTestItem(result);
 
-                          Navigator.of(context).pop(MaterialPageRoute(
-                              builder: (context) => ResultScreen(1)));
+                          /*Navigator.of(context).pop(MaterialPageRoute(
+                              builder: (context) => ResultScreen(1)));*/
                         },
                         child: Container(
                           decoration: BoxDecoration(
